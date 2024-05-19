@@ -248,7 +248,7 @@ jobs:
       working-directory: ./backend
 
     - name: Run Snyk to check for vulnerabilities in the Docker image
-      uses: snyk/actions/docker@master
+      uses: snyk/actions/setup@master
       with:
         image: ${{ secrets.DOCKER_USERNAME }}/backend-api
         args: --file=backend/Dockerfile --severity-threshold=high
