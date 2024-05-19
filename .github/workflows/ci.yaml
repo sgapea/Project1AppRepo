@@ -236,7 +236,7 @@ jobs:
         severity: 'CRITICAL,HIGH' 
         
     - name: Install Snyk CLI
-      uses: snyk/actions/setup@master
+      uses: snyk/actions/node@master
       with:
         snyk-token: ${{ secrets.SNYK_TOKEN }}
      
